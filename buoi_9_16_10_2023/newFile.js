@@ -1,0 +1,1 @@
+titleElem.style.color = "red";
