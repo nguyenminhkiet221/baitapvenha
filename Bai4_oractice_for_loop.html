@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bài 4</h1>
+    <p>
+        Viết chương trình nhập vào một số n. In ra bảng cửu chương của n.
+        Ví dụ: n = 2 thì in ra:
+        2 x 1 = 2
+        2 x 2 = 4
+        2 x 3 = 6
+        2 x 4 = 8
+        2 x 5 = 10
+        2 x 6 = 12
+        2 x 7 = 14
+        2 x 8 = 16
+        2 x 9 = 18
+        2 x 10 = 20
+    </p>
+
+    <form>
+        <label for="">Nhập số nguyên n: </label>
+        <input type="number" id="number" ><br>
+        <button type="button" id="button">Submit</button>
+    </form>
+
+    <script>
+        let button = document.getElementById("button");
+        button.addEventListener('click', () => {
+            let i = parseInt(document.getElementById("number").value);
+            for(let k = 0, n = 0, count = 0; k += 1;){
+                n = i * k;
+                console.log(n);
+                count += 1;
+                if( count == 10){
+                    break;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

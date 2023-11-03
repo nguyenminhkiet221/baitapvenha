@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bài 2</h1>
+    <p>
+        Viết chương trình nhập vào một số nguyên dương n. Tính giai thừa của n.
+        Note: Giai thừa của n được tính bằng công thức:
+        n! = n*(n - 1)*(n - 2)*....1
+        Ví dụ: 5! = 5 * 4 * 3 * 2 * 1 = 120
+    </p>
+    <form>
+        <label for="">Nhập số nguyên n: </label>
+        <input type="number" id="number" ><br>
+        <button type="button" id="button">Submit</button>
+    </form>
+    <script>
+        let button = document.getElementById("button");
+        button.addEventListener('click', () => {
+            let number = parseInt(document.getElementById("number").value);
+
+            for(i = number, result = 1; i <= number; i--) {
+                if ( i >= 1 ) {
+                    result = result * i;
+                    console.log(result);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
