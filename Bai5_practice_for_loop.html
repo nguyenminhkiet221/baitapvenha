@@ -22,11 +22,20 @@
     <script>
         let button = document.getElementById("button");
         button.addEventListener('click', () => {
-            let i = parseInt(document.getElementById("number").value);
+            let n = parseInt(document.getElementById("number").value);
 
-            
-
+            for( k = 0, i = 1; i < n; i++){
+                if ( n % i == 0){
+                    k += i; 
+                }
+            }
+            if ( k == n ){
+                console.log(n + " là số hoàn hảo");
+            } else {
+                console.log( n + " không phải là số hoàn hảo");
+            }
         });
+
     </script>
 </body>
 </html>
