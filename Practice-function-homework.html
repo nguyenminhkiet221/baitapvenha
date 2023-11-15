@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    
+    <h1>Bài 1</h1>
+    <script>
+        function sumEven(n) {
+            let sum = 0;
+
+            for (let i = 2; i <= n; i++) {
+                if (i % 2 === 0) {
+                    sum += i;
+                }
+            }
+            console.log(`Tong cac chu so chan tu 2 den ${n} bang: ${sum}`)
+        }
+
+
+        sumEven(10);
+    </script>
+    
+    
+    
+    
+    
+    <h1>Bài 2</h1>
+    <script>
+        function transformStr(string) {
+            console.log(`Lowercase: ${string.toLowerCase()}`)
+            console.log(`Uppercase: ${string.toUpperCase()}`)
+
+        }
+
+        transformStr('Function Is Magic!');        
+    </script>
+  
+  
+  
+    <h1>Bài 3</h1>
+    <script>
+        function solveEquation(a, b) {
+            if (a === 0) {
+                if (b === 0) {
+                    console.log('Phương trình có vô số nghiệm.');
+                } else {
+                    console.log('Phương trình vô nghiệm.');
+                }
+            } else {
+                const x = -b / a;
+                console.log(`Nghiệm của phương trình là x = ${x}`);
+            }
+        }
+
+        solveEquation(2, -4);
+        solveEquation(0, 0);
+        solveEquation(0, -4);
+    </script>
+</body>
+</html>
