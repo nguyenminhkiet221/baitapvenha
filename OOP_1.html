@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bài tập OOP 1</h1>
+    <script>
+        class Rectangle {
+
+        constructor(dai, rong) {
+            this.dai = dai;
+            this.rong = rong;
+        }
+
+        chuVi() {
+            return (this.dai + this.rong) * 2;
+        }
+
+        dienTich() {
+            return this.dai * this.rong;
+        }
+
+        showInfo() {
+            console.log(`Chieu dai: ${this.dai}`);
+            console.log(`Chieu rong: ${this.rong}`);
+            console.log(`Chu vi: ${this.chuVi()}`);
+            console.log(`Dien tich: ${this.dienTich()}`);
+        }
+        }
+
+        hcn = new Rectangle(5, 3)
+        hcn.showInfo();
+    </script>
+</body>
+</html>

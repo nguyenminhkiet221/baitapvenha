@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bài tập OOP 2</h1>
+    <script>
+        class Vehicle {
+            constructor(tenchuxe, loaixe, dungtich, trigia) {
+                this.tenchuxe = tenchuxe;
+                this.loaixe = loaixe;
+                this.dungtich = dungtich;
+                this.trigia = trigia;
+            }
+            thue() {
+                if (this.dungtich < 100) {
+                    return this.trigia * 0.01;
+                } else if (100 < this.dungtich < 200) {
+                    return this.trigia * 0.03;
+                } else if (this.dungtich > 20) {
+                    return this.trigia * 0.05;
+                } else {
+                    console.log('error');
+                }
+            }
+
+            showInfo() {
+                console.log(`Tên chủ xe: ${this.tenchuxe}`);
+                console.log(`Loại xe: ${this.loaixe}`);
+                console.log(`Dung tích: ${this.dungtich}`);
+                console.log(`Trị giá: ${this.trigia}`);
+                console.log(`Thuế: ${this.thue()}`);
+            }
+        }
+        Vehicle1 = new Vehicle('Nguyen A', 'honda', '50', '12000000');
+        Vehicle1.showInfo();
+    </script>
+</body>
+</html>
